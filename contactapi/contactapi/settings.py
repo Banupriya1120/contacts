@@ -38,11 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'drf_yasg',
+    
     'authentication',
     'contacts',
     'rest_framework'
 ]
+
+
 REST_FRAMEWORK={
     'DEFAULT_AUTHENTICATION_CLASSES':(
         'authentication.backend.JWTAuthentication',
